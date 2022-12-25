@@ -18,6 +18,7 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
+    border-bottom: 1px solid #FFBF00;
 }
 
 .contenedor-header header {
@@ -61,5 +62,62 @@ html {
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+/* SECTION HOME */
+.inicio {
+    background: linear-gradient(to top, rgba(184, 134, 11, 0), rgba(151, 109, 25, 0.1)),
+    url(assets/img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .container-banner {
+    padding: 60px;
+    text-align: left;
+}
+
+.inicio .container-banner h1 {
+    margin-top: -10px;
+    font-size: 70px;
+    font-family: "Righteous";
+}
+
+.inicio .container-banner p {
+    color: #C5C5C5;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: "Righteous";
+}
+
+.inicio .container-banner .contactame {
+    display: block;
+    max-width: 225px;
+    padding: 20px 60px;
+    margin-top: 60px;
+    color: #FFBF00;
+    background: transparent;
+    border: 1px solid #FFBF00;
+    line-height: 15px;
+    cursor: pointer;
     
+    
+}
+
+.inicio .container-banner .contactame span {
+    margin-left: -11px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Righteous";
+    text-decoration: none;
+    letter-spacing: 2px
+}
+
+    
+.inicio .container-banner .contactame:hover {
+    color: #FFD700;
+    border-color: #FFD700;
 }

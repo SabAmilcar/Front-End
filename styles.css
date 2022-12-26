@@ -18,7 +18,7 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
-    border-bottom: 1px solid #FFBF00;
+    border-bottom: 1px solid #FFD700;
 }
 
 .contenedor-header header {
@@ -66,13 +66,14 @@ html {
 
 /* SECTION HOME */
 .inicio {
-    background: linear-gradient(to top, rgba(184, 134, 11, 0), rgba(151, 109, 25, 0.1)),
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(64, 35, 1, 0.1)),
     url(assets/img/background.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #FFBF00
 }
 
 .inicio .container-banner {
@@ -120,4 +121,26 @@ html {
 .inicio .container-banner .contactame:hover {
     color: #FFD700;
     border-color: #FFD700;
+}
+
+.sobremi {
+    padding: 50px 50px;
+    background: black;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.sobremi div div h1{
+    color: #fff;
+}
+
+.card {
+    background: transparent;
+    border: 1px solid #FFD700;
+
+}
+
+.card-text {
+    color: #fff;
 }

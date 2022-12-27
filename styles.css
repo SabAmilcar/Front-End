@@ -124,15 +124,16 @@ html {
 }
 
 .sobremi {
-    padding: 50px 50px;
+    
     background: radial-gradient(circle, rgba(151, 109, 25, 0.1),rgba(0, 0, 0, 0)),
     url(https://t4.ftcdn.net/jpg/04/92/22/93/360_F_492229389_5ve1bCKgYrLRHpCj3o4FAzz60efaZgG0.jpg);
     background-size: cover;
-    height: 120vh;
+    height: 92vh;
     
 }
 
 .sobremi div div h1{
+    padding-top: 60px;
     color: #fff;
     text-decoration: none;
     font-family: "Righteous";
@@ -140,7 +141,7 @@ html {
 }
 
 .habilidades-blandas {
-    margin: 50px 250px;
+    margin: 45px 250px;
     max-width: 100%;
 }
 

@@ -15,24 +15,20 @@ html {
     background: #000000;
     position: fixed; 
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    border-bottom: 1px solid #FFBF00;
+    border-bottom: 1px solid #DAA520;
+    height: 55px;
 }
 
 .contenedor-header header {
-    max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px 20px; 
+    padding: 5px 120px;     
 }
 
 .contenedor-header header .logo a {
     font-family: "Righteous";
-    font-size: 36px;
+    font-size: 30px;
     color: #FFBF00;
     text-decoration: none;
 }
@@ -43,10 +39,10 @@ html {
 }
 
 .contenedor-header header nav ul li a {
-    text-align: none;
+    font-family: "Righteous";
+    font-size: 17px;
     color: #fff;
     margin: 0 15px;
-    padding: 3px;
     transition: .5;
     text-decoration: none;
 }
@@ -55,8 +51,13 @@ html {
     color: #FFBF00;
 }
 
+nav {
+    display: inline-block;
+    margin: 10px 0;
+}
+
 .nav-responsive {
-    background-color: #FFBF00;
+    background-color: #DAA520;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -73,7 +74,7 @@ html {
     color: #fff;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #FFBF00;
+    border-bottom: 1px solid #DAA520;
 }
 
 .inicio .container-banner {
@@ -99,12 +100,11 @@ html {
     max-width: 225px;
     padding: 20px 60px;
     margin-top: 60px;
-    color: #FFBF00;
+    color: #DAA520;
     background: transparent;
-    border: 1px solid #FFBF00;
+    border: 1px solid #DAA520;
     line-height: 15px;
     cursor: pointer;
-    
     
 }
 
@@ -116,39 +116,33 @@ html {
     text-decoration: none;
     letter-spacing: 2px
 }
-
     
 .inicio .container-banner .contactame:hover {
-    color: #FFD700;
-    border-color: #FFD700;
+    color: #FFBF00;
+    border-color: #FFBF00;
 }
 
 .sobremi {
-    
     background: radial-gradient(circle, rgba(151, 109, 25, 0.1),rgba(0, 0, 0, 0)),
     url(https://t4.ftcdn.net/jpg/04/92/22/93/360_F_492229389_5ve1bCKgYrLRHpCj3o4FAzz60efaZgG0.jpg);
     background-size: cover;
-    height: 92vh;
-    
+    height: 100vh;
 }
 
 .sobremi div div h1{
-    padding-top: 60px;
+    padding-top: 100px;
     color: #fff;
     text-decoration: none;
     font-family: "Righteous";
-    
 }
 
 .habilidades-blandas {
-    margin: 45px 250px;
     max-width: 100%;
+    padding: 20px 300px 0px 300px;
 }
 
 .card {
     background: transparent;
-    
-
 }
 
 .card-img-top {
@@ -157,22 +151,51 @@ html {
     height: 135px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -10px;
 }
 
-.card-text {
+.card-body {
+    margin-top: -10px;
     color: #fff;
+}
+.card-text {
     text-align: center;
     font-size: 11pt;
     font-weight: 200;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    
 }
 
-strong {
+.card-title {
     color: #fff;
-    font-size: 18pt !important;
+    font-size: 18pt;
     text-decoration: none;
     font-family: "Righteous";
+}
+
+.presentacion {
+    padding: 50px 300px 0px 300px;
+}
+
+.bug {
+    margin-bottom: 35px;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #DAA520;
+}
+
+.progress {
+    background-color: #EEE8AA;
+    height: 22px;
+    margin: 0px 0px 21px 0px;
+}
+.progress-bar {
+    background-color: #DAA520;
+    text-decoration: none;
+    font-family: "Righteous";
+    color: #fff;
+    font-size: 12pt;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.porcentaje {
+    margin: auto;
+    text-shadow: 1px 0px 0px #000;
 }

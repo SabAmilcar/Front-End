@@ -70,8 +70,8 @@ nav {
 
 /* SECTION HOME */
 .inicio {
-    background: linear-gradient(to top, rgba(184, 134, 11, 0), rgba(151, 109, 25, 0.2)),
-    url(assets/img/background.jpg);
+    background: radial-gradient(circle, rgba(151, 109, 25, 0.1),rgba(0, 0, 0, 0)),
+    url(assets/img/background_home.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -108,7 +108,12 @@ nav {
     border: 1px solid #DAA520;
     line-height: 15px;
     cursor: pointer;
-    
+    transition: .5s;
+}
+
+.inicio .container-banner .contactame:hover {
+    background-color: #DAA520;
+    color: #fff !important;
 }
 
 .inicio .container-banner .contactame h2 {
@@ -143,6 +148,7 @@ nav {
     url(https://t4.ftcdn.net/jpg/04/92/22/93/360_F_492229389_5ve1bCKgYrLRHpCj3o4FAzz60efaZgG0.jpg);
     background-size: cover;
     height: 100vh;
+    border-bottom: 1px solid #DAA520;
 }
 
 .sobremi div div h1{
@@ -172,7 +178,7 @@ nav {
 }
 
 .card-body {
-    margin-top: -10px;
+    margin-top: -20px;
     color: #fff;
 }
 .card-text {
@@ -189,7 +195,7 @@ nav {
 }
 
 .presentacion {
-    padding: 50px 300px 0px 300px;
+    padding: 30px 300px 0px 300px;
 }
 
 .bug {
@@ -211,6 +217,7 @@ nav {
     color: #fff;
     font-size: 12pt;
     text-shadow: 1px 1px 1px #000;
+    
 }
 
 .porcentaje {
@@ -227,6 +234,7 @@ nav {
     height: 100vh;
     color: #fff;
     padding: 50px 20px;
+    border-bottom: 1px solid #DAA520;
 }
 
 .portfolio .contenido-seccion {
@@ -237,7 +245,7 @@ nav {
     font-size: 46px;
     font-family: 'Righteous';
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 .portfolio .galeria{
     display: flex;
@@ -280,3 +288,75 @@ nav {
 .portfolio .galeria .proyecto .overlay:hover h3 {
     margin-bottom: 0px;
 }
+
+/* SECTION CONTACT ME */
+
+#contact {
+    padding: 100px 15px;
+    background: radial-gradient(circle, rgba(151, 109, 25, 0.1),rgba(0, 0, 0, 0)),
+    url(/assets/img/background_contact.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#contact .titulo-seccion {
+    margin-bottom: 60px;
+}
+
+#contact .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contact .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contenedor-form input,
+#contact .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid #DAA520;
+}
+
+#contact .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contact .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contact .titulo-seccion {
+    font-size: 46px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #e0e0e0;
+    text-decoration-thickness: 5px;
+}
+
+#contact .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contact .btn-enviar:hover {
+    background-color: #DAA520;
+    color: #fff;
+}
+
+/*  */

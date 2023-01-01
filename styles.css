@@ -29,12 +29,21 @@ html {
     padding: 5px 120px;     
 }
 
-.contenedor-header header .logo a {
-    font-family: "Righteous";
-    font-size: 30px;
-    color: #FFBF00;
-    text-decoration: none;
+.contenedor-header header .logo {
+    display: flex;
+    height: 55px;
 }
+
+.contenedor-header header .logo a {
+    display: flex;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.icon:hover {
+    filter: contrast(65%);
+}
+
 
 .contenedor-header header ul {
     display: flex;

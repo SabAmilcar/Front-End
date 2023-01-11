@@ -212,7 +212,8 @@ nav {
     margin-bottom: 35px;
     width: 50%;
     height: 50%;
-    border: 1px solid #DAA520;
+    border: 2px solid #DAA520;
+    border-radius: 100%;
 }
 
 .progress {

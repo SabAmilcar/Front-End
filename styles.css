@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&family=Roboto:wght@100&family=Work+Sans:wght@100;400;600;800&display=swap');
 * {
     box-sizing: border-box;
-    font-family: "Work Sans";
+    font-family: "Righteous";
     margin: 0;
     padding: 0;
 }
@@ -13,13 +13,12 @@ html {
 /* MENU */
 .contenedor-header {
     background: #000000;
-    position: fixed; 
-    width: 100%;
-    border-bottom: 1px solid #DAA520;
     height: 55px;
-    top: 0;
-    left: 0;
-    z-index: 99;    
+    width: 99vw;
+    align-items: center;
+    border-bottom: 1px solid #DAA520;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    z-index: 99;   
 }
 
 .contenedor-header header {
@@ -27,11 +26,6 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 5px 120px;     
-}
-
-.contenedor-header header .logo {
-    display: flex;
-    height: 55px;
 }
 
 .contenedor-header header .logo a {
@@ -48,19 +42,26 @@ html {
 .contenedor-header header ul {
     display: flex;
     list-style: none;
+    margin-right: 30px;
+}
+
+.contenedor-header header nav ul li {
+    margin: 0 5px;
+
 }
 
 .contenedor-header header nav ul li a {
-    font-family: "Righteous";
-    font-size: 17px;
+    padding: 0px 13px;
+    font-size: 18px;
     color: #fff;
-    margin: 0 15px;
     transition: .5;
     text-decoration: none;
+    display: block; /*mmm*/
 }
 
 .contenedor-header header nav ul li a:hover {
     color: #FFBF00;
+    transition: 0.4s;
 }
 
 nav {
@@ -69,10 +70,10 @@ nav {
 }
 
 .nav-responsive {
-    background-color: #DAA520;
+    margin-right: 30px;
+    font-size: 25px;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
     cursor: pointer;
     display: none;
 }
@@ -97,14 +98,14 @@ nav {
 .inicio .container-banner h1 {
     margin-top: -10px;
     font-size: 70px;
-    font-family: "Righteous";
+    
 }
 
 .inicio .container-banner p {
     color: #C5C5C5;
     margin-top: 20px;
     font-size: 30px;
-    font-family: "Righteous";
+    
 }
 
 .inicio .container-banner .contactame {
@@ -124,13 +125,13 @@ nav {
 .inicio .container-banner .contactame:hover {
     background-color: #DAA520;
     color: #fff !important;
+    transition: 0.9s;
 }
 
 .inicio .container-banner .contactame h2 {
     margin: 5px -10px;
     text-align: center;
     font-size: 18px;
-    font-family: "Righteous";
     text-decoration: none;
     letter-spacing: 2px
 }
@@ -145,12 +146,6 @@ nav {
     z-index: -1;
     transition: 1s;
 }
-    
-.inicio .container-banner .contactame:hover {
-    color: #FFBF00;
-    border-color: #FFBF00;
-}
-
 /* SECTION ABOUT ME */
 
 .sobremi {
@@ -165,7 +160,6 @@ nav {
     padding-top: 70px;
     color: #fff;
     text-decoration: none;
-    font-family: "Righteous";
     font-size: 46px;
     text-align: center;
 }
@@ -191,21 +185,33 @@ nav {
     margin-top: -20px;
     color: #fff;
 }
-.card-text {
+
+.card-title {
     text-align: center;
-    font-size: 11pt;
+    font-size: 18pt;
+    text-decoration: none;
     font-weight: 200;
 }
 
-.card-title {
-    color: #fff;
-    font-size: 18pt;
+.card-body-text {
+    text-align: center;
+    font-size: 12.5pt;
     text-decoration: none;
-    font-family: "Righteous";
+    font-weight: 200;
+    font-family: "Work Sans";
 }
+
 
 .presentacion {
     padding: 30px 300px 0px 300px;
+}
+
+.card-body-text-h {
+    text-align: center;
+    font-size: 11pt;
+    text-decoration: none;
+    font-weight: 200;
+    font-family: "Work Sans";
 }
 
 .bug {
@@ -224,7 +230,6 @@ nav {
 .progress-bar {
     background-color: #DAA520;
     text-decoration: none;
-    font-family: "Righteous";
     color: #fff;
     font-size: 12pt;
     text-shadow: 1px 1px 1px #000;
@@ -319,6 +324,7 @@ nav {
 #contact .contenedor-form {
     max-width: 1100px;
     margin: auto;
+    
 }
 
 #contact .contenedor-form .fila {
@@ -336,6 +342,7 @@ nav {
     border-radius: 20px;
     border: 2px solid #DAA520;
     background-color:#e0e0e0;
+    
 }
 
 #contact .contenedor-form .mitad input {
@@ -364,6 +371,7 @@ nav {
     cursor: pointer;
     transition: .5s;
     padding: 10px 15px !important;
+    font-family: "Work Sans";
 }
 
 #contact .btn-enviar:hover {
@@ -422,7 +430,7 @@ footer .redes a:hover {
 
 footer .copyright {
     color: #C5C5C5;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
 }
 
